@@ -1,0 +1,29 @@
+.form {
+  display: flex;
+  flex: 75%;
+  /* justify-content: space-between; */
+  gap: 40px;
+  align-items: center;
+}
+.form-select {
+  width: 170px;
+}
+#input {
+  width: 280px;
+}
+/* .para {
+  flex: 25%;
+  text-align: end;
+} */
+.para p {
+  border: 0.5px solid black;
+  width: 185px;
+  height: 50px;
+  background-color: coral;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
