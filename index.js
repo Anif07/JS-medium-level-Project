@@ -453,6 +453,7 @@ const Students = [
 
 const tablebody = document.getElementById("tableBody");
 const NoOfDocuments = document.getElementById("list");
+const inputField = document.getElementById("input");
 
 function tableInsertHandler(Students) {
   tablebody.innerHTML = "";
@@ -488,6 +489,7 @@ function searchHandler(event) {
 
   tableInsertHandler(filteredStudents);
   NoOfDocuments.innerText = filteredStudents.length;
+  inputField.placeholder = `Search by ${sortBy}`;
 }
 
 document
@@ -495,5 +497,5 @@ document
   .addEventListener("click", searchHandler);
 
 document.getElementById("FilterBy").addEventListener("change", (e) => {
-  console.log(e.target.value);
+  inputField.placeholder = `Search by ${e.target.value}`;
 });
