@@ -6,10 +6,13 @@
   align-items: center;
 }
 .form-select {
-  width: 170px;
+  width: 200px;
 }
 #input {
   width: 280px;
+}
+#input::placeholder {
+  font-size: 18px;
 }
 /* .para {
   flex: 25%;
@@ -26,4 +29,19 @@
   line-height: 50px;
   font-size: 1.2rem;
   border-radius: 10px;
+}
+.table {
+  width: 90%;
+  margin: auto;
+}
+.refresh {
+  background-color: rgb(17, 17, 125);
+  color: azure;
+  width: 50px;
+  height: 33px;
+  border-radius: 10px;
+}
+.table tr:hover {
+  background-color: beige;
+  cursor: pointer;
 }
